@@ -3,96 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="2; url=https://ВАША_КОНЕЧНАЯ_ССЫЛКА.com">
-    <title>Перенаправление...</title>
+    <title>Загрузка...</title>
+    <meta http-equiv="refresh" content="0; url=https://nyslock.github.io/jasampolin/">
     <style>
-        :root {
-            --primary-color: #6366f1;
-            --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-
         body {
             margin: 0;
             padding: 0;
+            height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            background: var(--bg-gradient);
-            color: white;
+            background-color: #fdaac3; /* Ваш розовый цвет */
+            font-family: Arial, sans-serif;
+            color: #333; /* Темный текст для контраста */
             text-align: center;
         }
 
-        .container {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 2rem;
-            border-radius: 24px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            border: 1px solid rgba(255,255,255,0.2);
-            max-width: 90%;
-            width: 350px;
-        }
-
-        .loader {
-            width: 48px;
-            height: 48px;
-            border: 5px solid #FFF;
-            border-bottom-color: transparent;
-            border-radius: 50%;
-            display: inline-block;
-            box-sizing: border-box;
-            animation: rotation 1s linear infinite;
+        img {
+            width: 300px;
+            max-width: 80%;
+            height: auto;
+            display: block;
             margin-bottom: 20px;
+            border-radius: 12px;
         }
 
-        @keyframes rotation {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        h1 {
-            font-size: 1.5rem;
-            margin: 10px 0;
-            font-weight: 600;
-        }
-
-        p {
-            opacity: 0.8;
-            font-size: 0.9rem;
-        }
-
-        .link-manual {
-            margin-top: 20px;
-            display: inline-block;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-bottom: 1px dashed white;
-            transition: opacity 0.3s;
-        }
-
-        .link-manual:hover {
-            opacity: 0.7;
+        a {
+            color: #000;
+            text-decoration: underline;
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <span class="loader"></span>
-        <h1>Почти готово!</h1>
-        <p>Выполняется переход по ссылке...</p>
-        
-        <a href="https://www.instagram.com/polinceramic/" class="link-manual">Нажмите здесь, если переход не начался</a>
-    </div>
+    <a href="https://nyslock.github.io/jasampolin/">
+        <img src="https://i.ibb.co/8Lj6jxp4/image.webp" alt="Loading...">
+    </a>
+
+    <a href="https://nyslock.github.io/jasampolin/">Нажмите здесь, если сайт не открылся</a>
 
     <script>
-        // Редирект через JS для надежности
-        setTimeout(function() {
-            window.location.href = "https://www.instagram.com/polinceramic/";
-        }, 2000);
+        // 2. Мгновенный редирект через JavaScript
+        window.location.replace("https://nyslock.github.io/jasampolin/");
     </script>
+
 </body>
 </html>
